@@ -14,7 +14,6 @@ img.rounded-circle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     background-color: #f8f9fa;
     overflow: hidden; /* Evita que el contenido exceda el área del fondo */
   }
@@ -29,6 +28,5 @@ img.rounded-circle {
   
   .title-h1{
     color: #143F6A;
-    font-size: large;
     font-weight: bold;
   }

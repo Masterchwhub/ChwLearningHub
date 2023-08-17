@@ -17,11 +17,30 @@ const Profile = () => {
       </Navbar.Brand>
 
       <Nav className="mr-auto flex-column">
-        <h1 className='title-h1'>Andrea Quecán</h1>
-        <p>Current Job Title / Designation</p>
-        <h5>Add introduction: Example</h5>
-        <p>Con estos estilos, la imagen redonda se posicionará en la mitad del fondo gris, pero no estará completamente dentro de él. La combinación de las propiedades</p>
-        <Button>Complete your profile</Button>
+        <h1 className='title-h1'style={{ paddingTop: '20px', fontWeight: 'bold'}}>Andrea Quecán</h1>
+        <p style={{ fontSize: '18px' ,color: '#143F6A' }}>Current Job Title / Designation</p>
+        <p style={{ fontSize: '15px' ,fontWeight: 'bold', color: '#646464'}} >Add introduction: Example</p>
+        <p style={{ paddingBottom:'10px', fontSize: '15px',  fontWeight: 'bold', color: '#646464'}}>Dedicated Community Health Worker (CHW) with a passion for improving the well-being of her community. Born and raised in a small town, Andrea witnessed firsthand the health disparities and lack of access to healthcare services. </p>
+        <div>
+          <p style={{ fontSize: '15px',  fontWeight: 'bold', color: '#646464' }}>Areas of interest <br></br>
+Community Engagement / Outreach <br></br>
+Community Education</p>
+        </div>
+        <div>
+          <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>Bogotá, Colombia</p>
+        </div>
+        <div>
+          <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>Language Proficiency <br></br>
+          Spanish, French, English
+          </p>
+        </div>
+        <div>
+          <p style={{ paddingBottom:'40px',fontSize: '15px',  fontWeight: 'bold', color: '#47BBC6', }}>
+          + Add your language proficiency levels
+          </p>
+        </div>
+        <Button style={{color: 'white', background: '#FF8A34', width: '11rem', height: '3.5rem', border: '1px solid #FF8A34'
+}}>Complete your profile <br></br> 10% </Button>
       </Nav>
     </Navbar>
   );

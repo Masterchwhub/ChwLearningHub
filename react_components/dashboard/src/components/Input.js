@@ -1,20 +1,19 @@
 import React from 'react';
-import Button from './Button';
+import {  } from "./ButtonSkills";
+import ButtonSkills from './ButtonSkills';
 
-const Input = () => {
+const Input = ({titleSkills, pSkills}) => {
   return (
-    <div className="col-16" style={{ backgroundColor: 'white' }}>
+    <div className="col-16" style={{ backgroundColor: 'white'  }}>
       <div className="row" style={{ paddingBottom: '20px' }}>
-        <div className="col-10">
+        <div className="col-8">
           <h1 className="title-h1">
-            My trainings
+            {titleSkills}
           </h1>
-          <p>
-            In this section, you will be able to see the trainings within the Hub, and you can also view your external trainings, which you need to upload individually.
-          </p>
+          <p>{pSkills}</p>
         </div>
-        <div className="col-2">
-          <Button text="Dashboard" />
+        <div className="col-2" style={{ paddingLeft: '80px' }}>
+          <ButtonSkills  text="+ Add Training"></ButtonSkills>
         </div>
       </div>
     </div>
