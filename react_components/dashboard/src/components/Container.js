@@ -3,6 +3,9 @@ import Profile from './Profile';
 import Button from './Button';
 import Card from './Card'; 
 import Input from './Input';
+import Warning from './Warning';
+import {  } from "../App.css";
+import {  } from "../styles/Profile.css";
 
 const Container = () => {
   return (
@@ -11,28 +14,28 @@ const Container = () => {
         <div className="col-4">
           <Profile />
         </div>
-
+    
         <div className="col-8" style={{ backgroundColor: 'white' }}>
-          <h1>Welcome to your CHW Space </h1>
-
-          <div className="row">
-            <div className="col-4">
-              <Button text="CHW Profile" />
+          <div className="row"  style={{ paddingBottom: '20px' }}>
+            <div className="col-6">
+            <h1 className='title-h1'>Welcome to your CHW Space</h1>
             </div>
-            <div className="col-4">
-              <Button text="Learnig HUB" />
+            <div className="col-2 text-end">
+              <Button text="Dashboard" />
             </div>
           </div>
-
+          <div>
+            <Warning></Warning>
+          </div>
           <div className="row" style={{paddingTop: "10px"}}>
             <div className="col-4">
-              <Card color="#143F6A" title="IMG 1" />
+              <Card color="#143F6A" title="Hours of Training" />
             </div>
             <div className="col-4">
-              <Card color="#143F6A" title="IMG 2" />
+              <Card color="#143F6A" title="Certificates" />
             </div>
             <div className="col-4">
-              <Card color="#143F6A" title="IMG 3" />
+              <Card color="#143F6A" title="Assesments" />
             </div>
           </div>
 

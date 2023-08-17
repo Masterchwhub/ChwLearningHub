@@ -1,0 +1,7 @@
+.border-button{
+    padding: .475rem .85rem;
+    background-color: white;
+    border: 1px solid #47BBC6;
+    color: #47BBC6;
+    border-radius: .25rem;
+}

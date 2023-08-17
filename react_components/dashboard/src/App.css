@@ -1,3 +1,11 @@
+/*TITULOS PRINCIPALES PROFILE*/
+
+.title-h1{
+  color: #143F6A;
+  font-size: large;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }

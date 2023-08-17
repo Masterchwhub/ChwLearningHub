@@ -1,0 +1,34 @@
+/* Profile.css */
+
+/* Estilos para la imagen redonda */
+img.rounded-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block; /* Asegura que la imagen sea un bloque para controlar el margen automáticamente */
+  }
+  
+  /* Estilos para el fondo gris */
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow: hidden; /* Evita que el contenido exceda el área del fondo */
+  }
+  
+  /* Estilos para los textos */
+  .flex-column h3,
+  .flex-column h5,
+  .flex-column p {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 10px 0; /* Ajusta el margen vertical */
+  }
+  
+  .title-h1{
+    color: #143F6A;
+    font-size: large;
+    font-weight: bold;
+  }
