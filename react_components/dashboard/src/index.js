@@ -10,5 +10,5 @@ const root = ReactDOM.createRoot(rootelement);
 const dataset = rootelement.dataset;
 
 
-root.render(<Container/>,);
+root.render(<Container/>);
 

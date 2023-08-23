@@ -35,7 +35,7 @@ Community Education</p>
           </p>
         </div>
         <div>
-          <p style={{ paddingBottom:'40px',fontSize: '15px',  fontWeight: 'bold', color: '#47BBC6', }}>
+          <p style={{ paddingBottom:'0px',fontSize: '15px',  fontWeight: 'bold', color: '#47BBC6', }}>
           + Add your language proficiency levels
           </p>
         </div>

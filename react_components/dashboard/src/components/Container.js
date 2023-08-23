@@ -8,11 +8,30 @@ import {  } from "./Input";
 import Warning from './Warning';
 import {  } from "../App.css";
 import {  } from "../styles/Profile.css";
+import { useState } from 'react'
+import HomeProfile from '../pages/HomeProfile'
 
 const Container = () => {
+
+  const [show, setShow] = useState(false);
+    
+    const Routes = (show) =>{
+      console.log('ingrespo')
+        if (show) {
+            setShow(true)
+        } else {
+            setShow(false)
+        }
+    }
+
   return (
     <div className="container">
-      <div className="row">
+      <button class="navbar-button" type="button" onClick={() =>{Routes(true)}}>Home</button>
+      <button class="navbar-button" type="button" onClick={() =>{Routes(false)}}>Profile</button>
+
+      {
+        show && 
+        <div className="row">
         <div className="col-4">
           <Profile />
         </div>
@@ -49,6 +68,9 @@ const Container = () => {
         </div>
         </div>
       </div>
+      }
+
+      <HomeProfile></HomeProfile>
     </div>
   );
 };

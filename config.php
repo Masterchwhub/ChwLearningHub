@@ -180,7 +180,7 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
 $THEME->haseditswitch = true;
 $THEME->usescourseindex = true;
-// By default, all Moodle theme do not need their titles displayed.
+// By default, all Moodle theme do not need their titles displayed.m
 $THEME->activityheaderconfig = [
     'notitle' => true
 ];
