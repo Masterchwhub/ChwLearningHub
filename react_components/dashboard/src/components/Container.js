@@ -41,9 +41,9 @@ const Container = () => {
             <div className="col-6">
             <h1 className='title-h1'>Welcome to your CHW Space</h1>
             </div>
-            <div className="col-2 text-end" style={{ paddingLeft: '41rem' }}>
+            {/* <div className="col-2 text-end" style={{ paddingLeft: '41rem' }}>
               <Button text="Dashboard" />
-            </div>
+            </div> */}
           </div>
           <div>
             <Warning></Warning>
