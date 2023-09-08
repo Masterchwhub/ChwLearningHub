@@ -7,7 +7,7 @@ const TopicsCard = ({ title, subtitle, text }) => {
   return (
     <div>
         <div className="card" style={{width: "350px", height:"465px", marginRight: "20px"}}>
-        <img class="card-img-top" src="react_components\dashboard\src\img\prueba.jpg" style={{height: "150px"}}  alt="Card image cap"/>
+        <img class="card-img-top" src="react_components\dashboard\src\img\card5.png" style={{height: "150px"}}  alt="Card image cap"/>
             <div className="card-body">
                 <h5 className="title-h1">{title}</h5>
                 <p style={{color:"gray"}}>{subtitle}</p>

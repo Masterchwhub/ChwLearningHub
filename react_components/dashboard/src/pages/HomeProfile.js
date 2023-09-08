@@ -3,7 +3,6 @@ import ProfileCard from '../components/ProfileCard'
 import ActivitiesCard from '../components/ActivitiesCard'
 import ActivitiesTable from '../components/ActivitiesTable'
 import TopicsCard from '../components/TopicsCard'
-import ButtonSkills from '../components/ButtonSkills'
 import InterestCard from '../components/InterestCard'
 import Footer from '../components/Footer'
 import '../styles/Profile.css'; 
@@ -13,22 +12,21 @@ const NavBar = () => {
 return (
     <div>
         <div className="row">
-            <ProfileCard color="#3CBAC6" title="Welcome to your CHW space" subtitle="Hi David!" text="You have complete  lesson in last day." text2="Start your learning today." /> 
+            <ProfileCard color="#3CBAC6" title="Welcome to your CHW space" subtitle="Hi Valentina!" text="You have complete  lesson in last day." text2="Start your learning today." /> 
         </div>
         <br></br>
         <div className="row my-4" style={{borderRight: '4px solid #eee;'}}>
             <div className="col-6">
                 <ActivitiesCard color="#3CBAC6" subtitle="What is a community health worker?" 
-                text1="CHW/Promotor philsophy" 
-                text2="Community Health worker (CHWs) are recognized leaders and trusted members of the communities where they live"
-                text3="LAST ACTIVE: 3 DAYS AGO" />
+                text1="CHW/Promotor" 
+                text2="Community Health worker (CHWs) are recognized leaders" />
                 <ActivitiesTable />
             </div>
             <div className="col-6" style={{borderLeft: "1px solid #eee", left:"300px"}}>
                 <div className="title-h1 my-4">My areas of interest</div>
-                <InterestCard text="Community Education" color="transparent"/>
-                <InterestCard  text="Healthcare" color="transparent"/>
-                <InterestCard text="Policy and Advocacy" color="transparent"/>
+                <InterestCard />
+                <InterestCard />
+                <InterestCard />
             </div>
         </div>
         <div className="title-h1 my-4">Recommended Topics</div>

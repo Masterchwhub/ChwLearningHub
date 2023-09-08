@@ -36,7 +36,7 @@ const ProfileCard = ({ color, title, subtitle, text, text2 }) => {
             </div>
         </div>
     </div>
-  );
+);
 };
 
 export default ProfileCard;

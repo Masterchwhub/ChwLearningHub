@@ -1,6 +1,5 @@
 import React from 'react';
 import Profile from './Profile';
-import Button from './Button';
 import {  } from "./ButtonSkills";
 import Card from './Card'; 
 import Input from './Input';
@@ -26,8 +25,8 @@ const Container = () => {
 
   return (
     <div className="container">
-      <button class="navbar-button" type="button" onClick={() =>{Routes(true)}}>Home</button>
-      <button class="navbar-button" type="button" onClick={() =>{Routes(false)}}>Profile</button>
+      <button class="navbar-button" type="button" onClick={() =>{Routes(true)}}>Profile</button>
+      <button class="navbar-button" type="button" onClick={() =>{Routes(false)}}>Dashboard</button>
 
       {
         show && 
@@ -48,17 +47,17 @@ const Container = () => {
           <div>
             <Warning></Warning>
           </div>
-          <div className="row" style={{paddingTop: "30px"}}>
-            <div className="col-4">
-              <Card color="#143F6A" title="Hours of Training" />
-            </div>
-            <div className="col-4">
-              <Card color="#143F6A" title="Certificates" />
-            </div>
-            <div className="col-4">
-              <Card color="#143F6A" title="Assesments" />
-            </div>
-          </div>
+          <div className="row" style={{ paddingTop: "30px" }}>
+        <div className="col-4">
+          <Card color="#143F6A" title="Hours of Training" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_time-training-white.svg" />
+        </div>
+        <div className="col-4">
+          <Card color="#143F6A" title="Certificates" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_certificates-white.svg" />
+        </div>
+        <div className="col-4">
+          <Card color="#143F6A" title="Assessments" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_assessment-course-white.svg" />
+        </div>
+      </div>
 
         <div className='row' style={{paddingTop: "3rem"}}>
           <Input titleSkills="My trainings" pSkills="In this section, you will be able to see the trainings within the Hub, and you can also view your external trainings, which you need to upload individually." ></Input>

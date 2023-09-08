@@ -6,7 +6,7 @@ import ButtonSkills from './ButtonSkills';
 const InterestCard = ({ color, text }) => {
   return (
     <div>
-            <div className="card my-2" style={{width: "300px", backgroundColor: color , color: 'gray', borderRadius: '10px'}}>
+            {/* <div className="card my-2" style={{width: "300px", backgroundColor: color , color: 'gray', borderRadius: '10px'}}>
             <div className="card-body" style={{backgroundColor: color , color: 'gray', borderRadius: '10px'}}> 
                 <div className="row">
                     <div className="col-5">
@@ -20,7 +20,9 @@ const InterestCard = ({ color, text }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
+   <img src="react_components\dashboard\src\img\card3.png" width="230" height="80"></img>
+
     </div>
   );
 };
