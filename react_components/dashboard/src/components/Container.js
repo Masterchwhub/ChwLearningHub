@@ -8,14 +8,23 @@ import Warning from './Warning';
 import {  } from "../App.css";
 import {  } from "../styles/Profile.css";
 import { useState } from 'react'
+import MoodleWs from "../services/moodlews";
 import HomeProfile from '../pages/HomeProfile'
 
-const Container = () => {
+const Container = (props) => {
+
+  const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot)
+
+  let usersData = ['']
+  let userWs = moodleWsInstance.getMoodleUser(parseInt(props.userid))
+  if (userWs) {
+    usersData = userWs
+  }
 
   const [show, setShow] = useState(false);
     
     const Routes = (show) =>{
-      console.log('ingrespo')
+      console.log('ingreso')
         if (show) {
             setShow(true)
         } else {
@@ -32,7 +41,7 @@ const Container = () => {
         show && 
         <div className="row">
         <div className="col-4">
-          <Profile />
+          <Profile usersData={usersData} wwwroot={props.wwwroot}/>
         </div>
     
         <div className="col-8" style={{ backgroundColor: 'white' }}>
@@ -69,7 +78,7 @@ const Container = () => {
       </div>
       }
 
-      <HomeProfile></HomeProfile>
+      <HomeProfile usersData={usersData} wwwroot={props.wwwroot}></HomeProfile>
     </div>
   );
 };

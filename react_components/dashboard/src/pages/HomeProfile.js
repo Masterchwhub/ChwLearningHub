@@ -8,11 +8,11 @@ import Footer from '../components/Footer'
 import '../styles/Profile.css'; 
 
 
-const NavBar = () => {
+const NavBar = (props) => {
 return (
     <div>
         <div className="row">
-            <ProfileCard color="#3CBAC6" title="Welcome to your CHW space" subtitle="Hi Valentina!" text="You have complete  lesson in last day." text2="Start your learning today." /> 
+            <ProfileCard color="#3CBAC6" title="Welcome to your CHW space" subtitle="Hi " text="You have complete  lesson in last day." text2="Start your learning today." wwwroot={props.wwwroot} usersData={props.usersData}/> 
         </div>
         <br></br>
         <div className="row my-4" style={{borderRight: '4px solid #eee;'}}>

@@ -3,12 +3,25 @@ import { Navbar, Nav, Button } from 'react-bootstrap';
 import '../styles/Profile.css'; 
 import {  } from "../App.css";
 
-const Profile = () => {
+const Profile = (props) => {
+
+  let nameUser = 'Development Name';
+  let cityProfile = 'Lima, PE';
+  let imgProfileCard = props.wwwroot + "/theme/moove/react_components/dashboard/src/img/img_avatar.png";
+
+  if (props.usersData !== undefined && props.usersData !== null && props.usersData.length !== undefined && props.usersData.length > 0) {
+    nameUser = props.usersData[0].fullname;
+    cityProfile = props.usersData[0].city + ', ' + props.usersData[0].country;
+    if (props.usersData[0].profileimageurl !== undefined && props.usersData[0].profileimageurl !== null && props.usersData[0].profileimageurl !== '') {
+      imgProfileCard = props.usersData[0].profileimageurl;
+    }
+  }
+
   return (
     <Navbar bg="light" expand="lg" className="flex-column">
       <Navbar.Brand href="#home">
         <img
-          src="react_components\dashboard\src\img\img_avatar.png" 
+          src={imgProfileCard}
           width="150"
           height="150"
           className="d-inline-block align-top rounded-circle"
@@ -17,7 +30,7 @@ const Profile = () => {
       </Navbar.Brand>
 
       <Nav className="mr-auto flex-column">
-        <h1 className='title-h1'style={{ paddingTop: '20px', fontWeight: 'bold'}}>Andrea Quecán</h1>
+        <h1 className='title-h1'style={{ paddingTop: '20px', fontWeight: 'bold'}}>{nameUser}</h1>
         <p style={{ fontSize: '19px' ,color: '#143F6A' }}>Current Job Title / Designation</p>
         <p style={{ fontSize: '15px' ,fontWeight: 'bold', color: '#646464'}} >Add introduction: Example</p>
         <p style={{ paddingBottom:'10px', fontSize: '15px', color: '#646464'}}>Dedicated Community Health Worker (CHW) with a passion for improving the well-being of her community. Born and raised in a small town, Andrea witnessed firsthand the health disparities and lack of access to healthcare services. </p>
@@ -30,7 +43,7 @@ Community Education</p>
         </div>
         <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_location.svg" width="29" height="29"></img>
         <div>
-          <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>Bogotá, Colombia</p>
+          <p style={{ fontSize: '15px',  fontWeight: 'bold' , color: '#646464'}}>{cityProfile}</p>
         </div>
         <div style={{ paddingTop:'20px'}}>
         <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_languages.svg" width="29" height="29" ></img>

@@ -33,7 +33,7 @@ $PAGE->set_pagelayout('react_dashboard');
 // Print the header.
 echo $OUTPUT->header();
 
-echo "<div id='root' data-username='$USER->firstname' data-lastname='$USER->lastname' data-sesskey='$USER->sesskey' data-wwwroot='$CFG->wwwroot' ></div>";
+echo "<div id='root' data-userid='$USER->id' data-sesskey='$USER->sesskey' data-wwwroot='$CFG->wwwroot' ></div>";
 
 $PAGE->requires->js('/theme/moove/react_components/dashboard/dist/bundle.js');
 // Get the assign to render the page.
