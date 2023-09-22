@@ -38,9 +38,8 @@ img.rounded-circle {
   }
 
   .img-profile {
-    z-index: 1;
-    top: 60px;
-    left: 20px;
+    position: absolute;
+    left: 390px;
   }
 
   .img-activities {

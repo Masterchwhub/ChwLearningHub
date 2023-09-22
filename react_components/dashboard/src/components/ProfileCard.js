@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Profile.css'; 
-import ButtonSkills from './ButtonSkills';
 
 
 const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData}) => {
@@ -12,10 +11,28 @@ const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData})
     }
     subtitle = subtitle + usersData[0].firstname + '!';
   }
+
   return (
     <div className="container">
         <div className="row">
-            <div className="col-4 img-profile"> 
+            <div className="col-1"/>
+            <div className="col-5 mr-4 card"style={{ marginTop:'50px', padding: 0}}>
+                <div className="card-body" style={{ height:"235px", paddingLeft:'130px', paddingTop: '100px', backgroundColor: color , color: 'white', borderRadius: '10px'}}>
+                    <h5 className="card-title" style={{ paddingBottom: "20px"}}>{subtitle}</h5>
+                    <p className="card-text">{text}</p>
+                    <p className="card-text">{text2}</p>
+                </div>
+            </div>
+            <div className="col-5 card"style={{ marginTop:'50px', padding: 0}}>
+                <div className="card-body" style={{ height:"235px", backgroundColor: color , color: 'white', borderRadius: '10px'}}>
+                <div className="row">
+                    <div className="col-6">
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="img-profile"> 
                 <img
                 src={imgProfileCard}
                 width="150"
@@ -24,23 +41,8 @@ const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData})
                 alt="Img"
                 />
             </div>
-            <div className="col-4" style={{top: '100px', right:' 100px;'}}> 
-            <h6 className="title-h1" style={{ textAlign: "left" }}>{title}</h6>
-            </div>
-            <div className="card" >
-                <div className="card-body" style={{ width: "800px", height:"180px", paddingLeft: '200px', backgroundColor: color , color: 'white', borderRadius: '10px'}}>
-                <h5 className="card-title" style={{ paddingBottom: "35px"}}>{subtitle}</h5>
-                <p className="card-text">{text}</p>
-                <p className="card-text">{text2}</p>
-                </div>
-            </div>
-            
-            <div className="row">
-                <div className="col-4" style={{left: '150px'}}> 
-                    <ButtonSkills text="Profile"></ButtonSkills>
-                    <ButtonSkills text="Activities"></ButtonSkills>
-                    <ButtonSkills text="Forum"></ButtonSkills>
-                </div>
+            <div style={{position:'relative' , left:'275px', bottom:'280px'}}> 
+                <h6 className="title-h1" style={{ textAlign: "left" }}>{title}</h6>
             </div>
         </div>
     </div>

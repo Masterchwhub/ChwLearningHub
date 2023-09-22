@@ -6,7 +6,7 @@ import IconCard from './IconCard';
 const ActivitiesTable = ({ color, title, subtitle, text }) => {
   return (
     <div>
-        <table class="table" style={{paddingTop: '10px',width: "150%"}}>
+        <table class="table" style={{paddingTop: '10px',width: "110%"}}>
             <thead>
             <tr>
             <th scope="col" style={{color: '#646464'}}>Progress</th> 
@@ -18,7 +18,7 @@ const ActivitiesTable = ({ color, title, subtitle, text }) => {
         </thead>
         <tbody>
             <tr>
-                <td><IconCard/></td>
+                <td><IconCard img={'react_components/dashboard/src/img/introduction_icon.svg'}/></td>
                 <td ><p className="title-td">Introduction <br></br> CHW´s</p><p style={{color: 'gray'}}>Learining hub</p></td>
                 <td  style={{color: 'gray'}}>Training</td>
                 <td  style={{color: 'gray'}}>English</td>
@@ -26,7 +26,7 @@ const ActivitiesTable = ({ color, title, subtitle, text }) => {
                 <td><button className='button-activities' >Continue Learning</button></td>
             </tr>
             <tr>
-                <td><IconCard/></td>
+                <td><IconCard img={'react_components/dashboard/src/img/percent_icon.svg'}/></td>
                 <td ><p className="title-td">Popular Education <br></br> Activities for Awareness</p><p style={{color: 'gray'}}>Learining hub</p></td>
                 <td  style={{color: 'gray'}}>Assessment</td>
                 <td  style={{color: 'gray'}}>English</td>
@@ -34,7 +34,7 @@ const ActivitiesTable = ({ color, title, subtitle, text }) => {
                 <td><button className='button-activities'>Finish assessment</button></td>
             </tr>
             <tr>
-                <td><IconCard/></td>
+                <td><IconCard img={'react_components/dashboard/src/img/food_icon.svg'}/></td>
                 <td ><p className="title-td">What is Pospartum <br></br>  Depresssion</p><p style={{color: 'gray'}}>Place ehere it is performed</p></td>
                 <td  style={{color: 'gray'}}>Training</td>
                 <td  style={{color: 'gray'}}>English</td>
