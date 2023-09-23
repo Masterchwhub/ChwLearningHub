@@ -1,0 +1,23 @@
+.react-calendar {
+    background: #F4F4F4;
+    border: none;
+}
+
+.react-calendar__tile--active {
+    background: #47bbc6;
+}
+
+.react-calendar__month-view__weekdays {
+    color: #47bbc6;
+}
+
+.react-calendar__navigation {
+    margin-bottom: 0;
+}
+
+.react-calendar__tile {
+    padding: 7.99px 6.6667px;
+    line-height: 12.1px;
+}
+
+
