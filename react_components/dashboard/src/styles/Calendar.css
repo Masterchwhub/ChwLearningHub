@@ -20,4 +20,8 @@
     line-height: 12.1px;
 }
 
+.react-calendar__month-view__days__day--weekend {
+    color: black
+}
+
 

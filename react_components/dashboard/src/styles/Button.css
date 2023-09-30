@@ -1,8 +1,8 @@
 .border-button{
-    padding: .475rem .85rem;
-    background-color: white;
-    border: 1px solid #47BBC6;
-    color: #47BBC6;
+    width: 100px;
+    background-color: #47BBC6;
+    border: 1px solid white;
+    color: white;
     border-radius: 1px;
 }
 
