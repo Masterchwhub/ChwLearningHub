@@ -11,7 +11,6 @@ export default class MoodleWs {
     }
 
     callMoodleWS(wsname, args) {
-
         const [data, setData] = useState(null);
 
          // POST request using fetch with async/await
@@ -31,11 +30,17 @@ export default class MoodleWs {
                  .then(response => response.json())
                  .then(data => setData(data[0].data));
          }, []);
-        console.log('data',data);
+        console.log('data', data);
         return data;
     }
 
     getMoodleStrings(args) {
        return this.callMoodleWS('core_get_strings', args);
     }
+
+    getMoodleUser(userid) {
+        let moodleUserData = { field: 'id', values: [userid] };
+       return this.callMoodleWS('core_user_get_users_by_field', moodleUserData);
+    }
+
 }

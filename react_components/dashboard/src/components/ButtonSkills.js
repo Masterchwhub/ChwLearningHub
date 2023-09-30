@@ -6,7 +6,7 @@ const ButtonSkills = ({ text }) => {
 
   return (
     <div>
-      <button class="button-skills" type="button" >{text}</button>
+      <button class="button-skills mr-2" type="button" >{text}</button>
     </div>
   );
 };

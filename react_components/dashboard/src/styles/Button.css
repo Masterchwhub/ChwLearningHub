@@ -1,7 +1,13 @@
 .border-button{
-    padding: .475rem .85rem;
+    width: 100px;
+    background-color: #47BBC6;
+    border: 1px solid white;
+    color: white;
+    border-radius: 1px;
+}
+
+.navbar-button {
+    border: none;
     background-color: white;
-    border: 1px solid #47BBC6;
-    color: #47BBC6;
-    border-radius: 3px;
+    color: gray;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Profile from './Profile';
-import Button from './Button';
 import {  } from "./ButtonSkills";
 import Card from './Card'; 
 import Input from './Input';
@@ -8,13 +7,41 @@ import {  } from "./Input";
 import Warning from './Warning';
 import {  } from "../App.css";
 import {  } from "../styles/Profile.css";
+import { useState } from 'react'
+import MoodleWs from "../services/moodlews";
+import HomeProfile from '../pages/HomeProfile'
 
-const Container = () => {
+const Container = (props) => {
+
+  const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot)
+
+  let usersData = ['']
+  let userWs = moodleWsInstance.getMoodleUser(parseInt(props.userid))
+  if (userWs) {
+    usersData = userWs
+  }
+
+  const [show, setShow] = useState(false);
+    
+    const Routes = (show) =>{
+      console.log('ingreso')
+        if (show) {
+            setShow(true)
+        } else {
+            setShow(false)
+        }
+    }
+
   return (
     <div className="container">
-      <div className="row">
+      <button class="navbar-button" type="button" onClick={() =>{Routes(true)}}>Profile</button>
+      <button class="navbar-button" type="button" onClick={() =>{Routes(false)}}>Dashboard</button>
+
+      {
+        show && 
+        <div className="row">
         <div className="col-4">
-          <Profile />
+          <Profile usersData={usersData} wwwroot={props.wwwroot}/>
         </div>
     
         <div className="col-8" style={{ backgroundColor: 'white' }}>
@@ -22,24 +49,24 @@ const Container = () => {
             <div className="col-6">
             <h1 className='title-h1'>Welcome to your CHW Space</h1>
             </div>
-            <div className="col-2 text-end" style={{ paddingLeft: '41rem' }}>
+            {/* <div className="col-2 text-end" style={{ paddingLeft: '41rem' }}>
               <Button text="Dashboard" />
-            </div>
+            </div> */}
           </div>
           <div>
             <Warning></Warning>
           </div>
-          <div className="row" style={{paddingTop: "30px"}}>
-            <div className="col-4">
-              <Card color="#143F6A" title="Hours of Training" />
-            </div>
-            <div className="col-4">
-              <Card color="#143F6A" title="Certificates" />
-            </div>
-            <div className="col-4">
-              <Card color="#143F6A" title="Assesments" />
-            </div>
-          </div>
+          <div className="row" style={{ paddingTop: "30px" }}>
+        <div className="col-4">
+          <Card color="#143F6A" title="Hours of Training" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_time-training-white.svg" />
+        </div>
+        <div className="col-4">
+          <Card color="#143F6A" title="Certificates" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_certificates-white.svg" />
+        </div>
+        <div className="col-4">
+          <Card color="#143F6A" title="Assessments" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_assessment-course-white.svg" />
+        </div>
+      </div>
 
         <div className='row' style={{paddingTop: "3rem"}}>
           <Input titleSkills="My trainings" pSkills="In this section, you will be able to see the trainings within the Hub, and you can also view your external trainings, which you need to upload individually." ></Input>
@@ -49,6 +76,9 @@ const Container = () => {
         </div>
         </div>
       </div>
+      }
+
+      <HomeProfile usersData={usersData} wwwroot={props.wwwroot}></HomeProfile>
     </div>
   );
 };

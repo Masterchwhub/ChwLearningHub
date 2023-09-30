@@ -27,13 +27,13 @@ require_once("../../config.php");
 
 require_login();
 global $PAGE, $OUTPUT, $USER, $CFG;
-$PAGE->set_url('/moodle/theme/moove/react_dashboard.php');
-$PAGE->set_pagelayout('react_dashboard');
+$PAGE->set_url('/moodle/theme/moove/react_profile.php');
+$PAGE->set_pagelayout('react_profile');
 
 // Print the header.
 echo $OUTPUT->header();
 
-echo "<div id='root' data-userid='$USER->id' data-sesskey='$USER->sesskey' data-wwwroot='$CFG->wwwroot' ></div>";
+echo "<div id='root' data-username='$USER->firstname' data-lastname='$USER->lastname' data-sesskey='$USER->sesskey' data-wwwroot='$CFG->wwwroot' ></div>";
 
 $PAGE->requires->js('/theme/moove/react_components/dashboard/dist/bundle.js');
 // Get the assign to render the page.

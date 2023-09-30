@@ -30,3 +30,21 @@ img.rounded-circle {
     color: #143F6A;
     font-weight: bold;
   }
+
+  .title-td{
+    color: #143F6A;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .img-profile {
+    position: absolute;
+    left: 375px;
+    top: 75px;
+  }
+
+  .img-activities {
+    z-index: 1;
+    top: 165px;
+    left: 10px;
+  }
