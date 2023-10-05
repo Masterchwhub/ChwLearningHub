@@ -1,7 +1,7 @@
 import React from 'react';
 import {  } from "../App.css";
 import {  } from "../styles/Profile.css";
-import HomeProfile from '../pages/HomeProfile'
+import Dashboard from '../pages/Dashboard'
 
 const Footer = () => {
   return (

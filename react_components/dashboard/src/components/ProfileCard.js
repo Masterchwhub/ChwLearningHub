@@ -34,7 +34,7 @@ const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData})
                 </div>
             </div>
             <div className="col-6 card"style={{ marginTop:'50px', padding: 0}}>
-                <div className="card-body p-0" style={{ height:"235px", backgroundColor: color , color: 'white', borderRadius: '5px'}}>
+                <div className="card-body p-0" style={{ backgroundColor: color , color: 'white', borderRadius: '5px'}}>
                     <div className="row">
                         <div className="col-7">
                             <h5 className="card-title mb-0" style={{ backgroundColor: '#F4F4F4' , color: '#143d6a',paddingLeft: '10px'}}>Calendar</h5>
@@ -48,10 +48,10 @@ const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData})
                             </div>
                             <div className='row mt-6'>
                                 <div className='col-6 pl-0'>
-                                    <Button text={'Save event'}/>
+                                    <Button text={'Save event'} style={true}/>
                                 </div>
                                 <div className='col-6'>
-                                    <Button text={'Next event'}/>
+                                    <Button text={'Next event >'} />
                                 </div>
                             </div>
                             
@@ -68,7 +68,7 @@ const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData})
                 alt="Img"
                 />
             </div>
-            <div style={{position:'relative' , left:'275px', bottom:'280px'}}> 
+            <div style={{position:'relative' , left:'275px', bottom:'300px'}}> 
                 <h6 className="title-h1" style={{ textAlign: "left" }}>{title}</h6>
             </div>
         </div>
