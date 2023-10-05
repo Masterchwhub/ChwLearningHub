@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 import '../styles/Profile.css'; 
 
 
-const NavBar = (props) => {
+const Dashboard = (props) => {
 return (
     <div>
         <div className="row">
@@ -65,4 +65,4 @@ return (
   );
 };
 
-export default NavBar;
+export default Dashboard;

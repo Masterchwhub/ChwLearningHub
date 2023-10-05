@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 // import Card from './Card';
 // import Input from './Input';
 // import Warning from './Warning';
-import HomeProfile from '../pages/HomeProfile';
 import MoodleWs from "../services/moodlews";
 import FullProfile from '../pages/FullProfile';
+import Dashboard from '../pages/Dashboard';
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -60,7 +60,7 @@ const Container = (props) => {
             <FullProfile usersData={usersData} wwwroot={props.wwwroot} />
           )}
           {activeButton === 'dashboard' && (
-            <HomeProfile usersData={usersData} wwwroot={props.wwwroot}></HomeProfile>
+            <Dashboard usersData={usersData} wwwroot={props.wwwroot}></Dashboard>
           )}
           {activeButton === 'menu' && <div>Hola Menu</div>}
           {activeButton === 'chws' && <div>Hola chws</div>}
