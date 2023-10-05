@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './Profile';
+import Profile from '../pages/Profile';
 import {  } from "./ButtonSkills";
 import Card from './Card'; 
 import Input from './Input';
