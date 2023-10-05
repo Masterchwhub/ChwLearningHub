@@ -1,84 +1,72 @@
-import React from 'react';
-import Profile from './Profile';
-import {  } from "./ButtonSkills";
-import Card from './Card'; 
-import Input from './Input';
-import {  } from "./Input";
-import Warning from './Warning';
-import {  } from "../App.css";
-import {  } from "../styles/Profile.css";
-import { useState } from 'react'
+import React, { useState } from 'react';
+// import Card from './Card';
+// import Input from './Input';
+// import Warning from './Warning';
+import HomeProfile from '../pages/HomeProfile';
 import MoodleWs from "../services/moodlews";
-import HomeProfile from '../pages/HomeProfile'
+import FullProfile from '../pages/FullProfile';
 
 const Container = (props) => {
+  const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
 
-  const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot)
-
-  let usersData = ['']
-  let userWs = moodleWsInstance.getMoodleUser(parseInt(props.userid))
+  let usersData = [''];
+  let userWs = moodleWsInstance.getMoodleUser(parseInt(props.userid));
   if (userWs) {
-    usersData = userWs
+    usersData = userWs;
   }
 
-  const [show, setShow] = useState(false);
-    
-    const Routes = (show) =>{
-      console.log('ingreso')
-        if (show) {
-            setShow(true)
-        } else {
-            setShow(false)
-        }
-    }
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (buttonIndex) => {
+    setActiveButton(buttonIndex);
+  };
 
   return (
     <div className="container">
-      <button class="navbar-button" type="button" onClick={() =>{Routes(true)}}>Profile</button>
-      <button class="navbar-button" type="button" onClick={() =>{Routes(false)}}>Dashboard</button>
-
-      {
-        show && 
-        <div className="row">
-        <div className="col-4">
-          <Profile usersData={usersData} wwwroot={props.wwwroot}/>
-        </div>
-    
-        <div className="col-8" style={{ backgroundColor: 'white' }}>
-          <div className="row"  style={{ paddingBottom: '20px' }}>
-            <div className="col-6">
-            <h1 className='title-h1'>Welcome to your CHW Space</h1>
-            </div>
-            {/* <div className="col-2 text-end" style={{ paddingLeft: '41rem' }}>
-              <Button text="Dashboard" />
-            </div> */}
-          </div>
-          <div>
-            <Warning></Warning>
-          </div>
-          <div className="row" style={{ paddingTop: "30px" }}>
-        <div className="col-4">
-          <Card color="#143F6A" title="Hours of Training" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_time-training-white.svg" />
-        </div>
-        <div className="col-4">
-          <Card color="#143F6A" title="Certificates" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_certificates-white.svg" />
-        </div>
-        <div className="col-4">
-          <Card color="#143F6A" title="Assessments" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_assessment-course-white.svg" />
-        </div>
+      <div className="navbar">
+        <button
+          className={`navbar-button ${activeButton === 'profile' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('profile')}
+        >
+          Profile
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'dashboard' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('dashboard')}
+        >
+          Dashboard
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'chws' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('chws')}
+        >
+          chws
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'form' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('form')}
+        >
+          Form
+        </button>
       </div>
 
-        <div className='row' style={{paddingTop: "3rem"}}>
-          <Input titleSkills="My trainings" pSkills="In this section, you will be able to see the trainings within the Hub, and you can also view your external trainings, which you need to upload individually." ></Input>
-          <Input titleSkills="Certifications" pSkills="In this section, you will be able to see the certifications within the Hub, and you can also view your external certifications, which you need to upload individually."></Input>
-          <Input titleSkills="Skills" pSkills="In this space, you will be able to see the badges you earn after completing the assessments."></Input>
-          <Input titleSkills="Activities In Progress" pSkills="In this space, you will be able to see the badges you earn after completing the assessments."></Input>
-        </div>
+      <div className="row">
+        <div className="col-12">
+          {activeButton === 'profile' && (
+            <FullProfile usersData={usersData} wwwroot={props.wwwroot} />
+          )}
+          {activeButton === 'dashboard' && (
+            <HomeProfile usersData={usersData} wwwroot={props.wwwroot}></HomeProfile>
+          )}
+          {activeButton === 'menu' && <div>Hola Menu</div>}
+          {activeButton === 'chws' && <div>Hola chws</div>}
+          {activeButton === 'form' && <div>Hola form</div>}
         </div>
       </div>
-      }
-
-      <HomeProfile usersData={usersData} wwwroot={props.wwwroot}></HomeProfile>
     </div>
   );
 };
