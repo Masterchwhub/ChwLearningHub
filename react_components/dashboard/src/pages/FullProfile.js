@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../components/Profile';
+import Profile from '../pages/Profile';
 import Card from '../components/Card';
 import Input from '../components/Input';
 import Warning from '../components/Warning';
