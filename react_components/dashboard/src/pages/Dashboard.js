@@ -1,10 +1,10 @@
 import React from 'react';
 import ProfileCard from '../components/core/ProfileCard'
-import ActivitiesCard from '../components/shared/ActivitiesCard'
-import ActivitiesTable from '../components/shared/ActivitiesTable'
-import TopicsCard from '../components/shared/TopicsCard'
-import InterestCard from '../components/shared/InterestCard'
-import Footer from '../components/shared/Footer'
+import ActivitiesCard from '../components/shared/cards/ActivitiesCard'
+import ActivitiesTable from '../components/shared/tables/ActivitiesTable'
+import TopicsCard from '../components/shared/cards/TopicsCard'
+import InterestCard from '../components/shared/cards/InterestCard'
+import Footer from '../components/core/Footer'
 import '../styles/Profile.css'; 
 
 

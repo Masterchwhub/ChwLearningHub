@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import MoodleWs from "../../services/moodlews";
 import FullProfile from '../../pages/FullProfile';
 import Dashboard from '../../pages/Dashboard';
-import StepsForm from '../../pages/StepsForm';
+import StepsContainer from '../../pages/StepsContainer';
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -61,7 +61,7 @@ const Container = (props) => {
             <Dashboard usersData={usersData} wwwroot={props.wwwroot}></Dashboard>
           )}
           {activeButton === 'form' && (
-            <StepsForm usersData={usersData} wwwroot={props.wwwroot}></StepsForm>
+            <StepsContainer usersData={usersData} wwwroot={props.wwwroot}></StepsContainer>
           )}
           {activeButton === 'menu' && <div>Hola Menu</div>}
           {activeButton === 'chws' && <div>Hola chws</div>}
