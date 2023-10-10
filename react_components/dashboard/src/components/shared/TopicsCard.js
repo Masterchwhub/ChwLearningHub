@@ -1,6 +1,4 @@
 import React from 'react';
-import '../styles/Profile.css'; 
-import ButtonSkills from './ButtonSkills';
 
 
 const TopicsCard = ({ title, subtitle, text, img }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import App from './App';
-import Container from './components/Container.js';
+import Container from './components/core/Container';
 // import Card from './components/Card.js';
 
 

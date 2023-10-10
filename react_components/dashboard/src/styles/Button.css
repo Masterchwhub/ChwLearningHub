@@ -3,7 +3,7 @@
     background-color: white;
     border: 1px solid white;
     color: #47BBC6;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 .next-button {
@@ -11,6 +11,7 @@
     background-color: #47BBC6;
     border: none;
     color: white;
+    border-radius: 5px;
 }
 
 .navbar-button {

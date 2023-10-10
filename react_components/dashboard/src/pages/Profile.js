@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import '../styles/Profile.css'; 
-import {  } from "../App.css";
 
 const Profile = (props) => {
 

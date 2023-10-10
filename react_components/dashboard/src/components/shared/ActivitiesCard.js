@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/Profile.css'; 
-import '../styles/ButtonSkills.css'; 
+import '../../styles/Profile.css'; 
 import ButtonSkills from './ButtonSkills';
 
 
