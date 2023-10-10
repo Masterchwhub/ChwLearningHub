@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/StepButton.css'; 
+import './styles/StepButton.css'; 
 
 const StepButton = ({ text, onClick }) => {
   return (

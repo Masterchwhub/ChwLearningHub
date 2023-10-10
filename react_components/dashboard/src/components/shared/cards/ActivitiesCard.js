@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/Profile.css'; 
-import ButtonSkills from './ButtonSkills';
+import '../../../styles/Profile.css'; 
+import ButtonSkills from '../buttons/ButtonSkills';
 
 
 const ActivitiesCard = ({ color, subtitle, text1, text2, text3}) => {

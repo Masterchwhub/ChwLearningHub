@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/Profile.css'; 
-import IconCard from './IconCard';
+import '../../../styles/Profile.css'; 
+import IconCard from '../cards/IconCard';
 
 
 const ActivitiesTable = ({ color, title, subtitle, text }) => {

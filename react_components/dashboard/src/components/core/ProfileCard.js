@@ -3,7 +3,7 @@ import '../../styles/Profile.css';
 import 'react-calendar/dist/Calendar.css';
 import '../../styles/Calendar.css'
 import Calendar from 'react-calendar';
-import Button from '../shared/Button';
+import Button from '../shared/buttons/Button';
 
 const ProfileCard = ({ color, title, subtitle, text, text2, wwwroot, usersData}) => {
   let imgProfileCard = wwwroot + "/theme/moove/react_components/dashboard/src/img/img_avatar.png";
