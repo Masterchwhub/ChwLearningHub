@@ -1,10 +1,10 @@
 import React from 'react';
 import Profile from '../pages/Profile';
-import Card from '../components/Card';
-import Input from '../components/Input';
-import Warning from '../components/Warning';
-
+import Card from '../components/shared/Card';
+import Input from '../components/shared/Input';
+import Warning from '../components/shared/Warning';
 import '../styles/Profile.css'; 
+
 const FullProfile = (props) => {
     return (
         <div className="container">

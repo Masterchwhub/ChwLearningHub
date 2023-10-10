@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-// import Card from './Card';
-// import Input from './Input';
-// import Warning from './Warning';
-import MoodleWs from "../services/moodlews";
-import FullProfile from '../pages/FullProfile';
-import Dashboard from '../pages/Dashboard';
+import MoodleWs from "../../services/moodlews";
+import FullProfile from '../../pages/FullProfile';
+import Dashboard from '../../pages/Dashboard';
+import StepsForm from '../../pages/StepsForm';
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -62,9 +60,11 @@ const Container = (props) => {
           {activeButton === 'dashboard' && (
             <Dashboard usersData={usersData} wwwroot={props.wwwroot}></Dashboard>
           )}
+          {activeButton === 'form' && (
+            <StepsForm usersData={usersData} wwwroot={props.wwwroot}></StepsForm>
+          )}
           {activeButton === 'menu' && <div>Hola Menu</div>}
           {activeButton === 'chws' && <div>Hola chws</div>}
-          {activeButton === 'form' && <div>Hola form</div>}
         </div>
       </div>
     </div>

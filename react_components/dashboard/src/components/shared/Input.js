@@ -1,6 +1,5 @@
 import React from 'react';
-import {  } from "./ButtonSkills";
-import ButtonSkills from './ButtonSkills';
+import ButtonSkills from '../shared/ButtonSkills'
 
 const Input = ({titleSkills, pSkills}) => {
   return (
