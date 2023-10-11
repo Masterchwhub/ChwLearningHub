@@ -96,7 +96,7 @@ const ChwsPromoter = () => {
                     <TopicsCard img={'react_components/dashboard/src/img/card5.png'} className="mx-4" title="Conflict Resolution " subtitle="Group Facilitation" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                     <TopicsCard img={'react_components/dashboard/src/img/card5.png'} title="Conflict Resolution Diagram" subtitle="Conflict Resolution" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus neque, fermentum nec consectetur sed, dignissim nec…"/>
                 </div>
-                <div className="title-h1-chws my-4" style={{paddingTop: "50px"}}>Other topics to explore</div>
+                <div className="title-h1-chws my-4" style={{paddingTop: "50px"}}>Other topics to exploree</div>
             </div>
         </div>
       
