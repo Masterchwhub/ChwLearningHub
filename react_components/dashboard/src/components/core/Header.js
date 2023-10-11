@@ -5,7 +5,7 @@ const Header = () => {
     <div className="header">
       <div className="content">
         <div className="title-header">CHW / Promotores</div>
-        <p>
+        <p className='p-chws'>
           Community Health Workers (CHWs) connect socioeconomic, political, and health systems and resources to the most vulnerable and disadvantaged populations. In this section, discover their care philosophy, personal/professional growth, and career pathways.
         </p>
       </div>
