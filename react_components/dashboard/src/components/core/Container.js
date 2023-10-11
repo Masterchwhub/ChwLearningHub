@@ -3,6 +3,7 @@ import MoodleWs from "../../services/moodlews";
 import FullProfile from '../../pages/FullProfile';
 import Dashboard from '../../pages/Dashboard';
 import StepsContainer from '../../pages/StepsContainer';
+import ChwsPromoter from '../../pages/ChwsPromoter';
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -60,11 +61,13 @@ const Container = (props) => {
           {activeButton === 'dashboard' && (
             <Dashboard usersData={usersData} wwwroot={props.wwwroot}></Dashboard>
           )}
+          {activeButton === 'chws' && (
+            <ChwsPromoter usersData={usersData} wwwroot={props.wwwroot} />
+          )}
           {activeButton === 'form' && (
             <StepsContainer usersData={usersData} wwwroot={props.wwwroot}></StepsContainer>
           )}
           {activeButton === 'menu' && <div>Hola Menu</div>}
-          {activeButton === 'chws' && <div>Hola chws</div>}
         </div>
       </div>
     </div>
