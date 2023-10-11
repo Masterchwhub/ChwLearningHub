@@ -82,8 +82,6 @@ const ChwsPromoter = () => {
     <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
   </div>
 </div>
-
-
   {/* final cards */}
                 <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
                 <div className="row">
