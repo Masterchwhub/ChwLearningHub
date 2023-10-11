@@ -6,7 +6,7 @@ const Input = ({titleSkills, pSkills}) => {
     <div className="col-16" style={{ backgroundColor: 'white'  }}>
       <div className="row" style={{ paddingBottom: '20px' }}>
         <div className="col-8">
-          <h1 className="title-h1">
+          <h1 className="title-h1-chws">
             {titleSkills}
           </h1>
           <p>{pSkills}</p>

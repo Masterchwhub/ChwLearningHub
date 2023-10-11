@@ -13,7 +13,7 @@ const ChwsPromoter = () => {
       <Header></Header>
       </div>
       <div>
-      <h1 className='title-h1'style={{ paddingTop: '20px', fontWeight: 'bold'}}>CHW/Promotor Philosophy</h1>
+      <h1 className='title-h1-chws'style={{ paddingTop: '20px', fontWeight: 'bold'}}>CHW/Promotor Philosophy</h1>
       </div>
 
     </div>

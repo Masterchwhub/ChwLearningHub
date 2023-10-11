@@ -16,7 +16,7 @@ const FullProfile = (props) => {
             <div className="col-8" style={{ backgroundColor: 'white' }}>
               <div className="row"  style={{ paddingBottom: '20px' }}>
                 <div className="col-6">
-                <h1 className='title-h1'>Welcome to your CHW Space</h1>
+                <h1 className='title-h1-chws'>Welcome to your CHW Space</h1>
                 </div>
               </div>
               <div>

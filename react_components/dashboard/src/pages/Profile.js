@@ -29,7 +29,7 @@ const Profile = (props) => {
       </Navbar.Brand>
 
       <Nav className="mr-auto flex-column">
-        <h1 className='title-h1'style={{ paddingTop: '20px', fontWeight: 'bold'}}>{nameUser}</h1>
+        <h1 className='title-h1-chws'style={{ paddingTop: '20px', fontWeight: 'bold'}}>{nameUser}</h1>
         <p style={{ fontSize: '19px' ,color: '#143F6A' }}>Current Job Title / Designation</p>
         <p style={{ fontSize: '15px' ,fontWeight: 'bold', color: '#646464'}} >Add introduction: Example</p>
         <p style={{ paddingBottom:'10px', fontSize: '15px', color: '#646464'}}>Dedicated Community Health Worker (CHW) with a passion for improving the well-being of her community. Born and raised in a small town, Andrea witnessed firsthand the health disparities and lack of access to healthcare services. </p>
