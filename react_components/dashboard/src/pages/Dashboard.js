@@ -32,11 +32,16 @@ return (
                 </div>
             </div>
             <div className="col-7">
-                <ActivitiesCard color="#3CBAC6" subtitle="Introduction to CHWs/Ps What Is a Community Health Worker?" 
-                text1="CHW/Promotor" 
-                text2="Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where they live and work…" />
+  <ActivitiesCard
+    color="#3CBAC6"
+    subtitle="Introduction to CHWs/Ps What Is a Community Health Worker?" 
+    text1="CHW/Promotor" 
+    text2="Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where they live and work…"
+    styleProps={{ width: "655px", backgroundColor: '#143F6A', color: 'white', borderRadius: '10px' }}
+  />
                 <ActivitiesTable />
             </div>
+            
         </div>
         <div className="row">
             <div className="col-1"/>
