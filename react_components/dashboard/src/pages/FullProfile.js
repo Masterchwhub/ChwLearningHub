@@ -23,7 +23,7 @@ const FullProfile = (props) => {
                 <Warning></Warning>
               </div>
               <div className="row" style={{ paddingTop: "30px" }}>
-      <div className="col">
+      <div className="col-">
         <Card color="#143F6A" title="Hours of Training" imageUrl="https://www.chwlearninghub.org/pix/ico/dash/ico_time-training-white.svg" />
       </div>
       <div className="col">

@@ -6,7 +6,7 @@ const Warning = () => {
     <div>
       {
         <div className='row'>
-        <div class="alert alert-success warning d-flex align-items-center" role="alert">
+        <div class="alert alert-success warning d-flex align-items-center" role="alert" style={{background: '47BBC6'}}>
           <div className="col-0">
             <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_alert-profile.svg" width="60" height="60"></img>
           </div>

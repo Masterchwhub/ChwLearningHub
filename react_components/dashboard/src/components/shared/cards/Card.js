@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ color, title, imageUrl }) => {
   return (
-    <div className="card" style={{ width: "240px", height: "220px", backgroundColor: color, color: 'white', borderRadius: '10px', position: 'relative' }}>
+    <div className="card" style={{ width: "350px", height: "220px", backgroundColor: color, color: 'white', borderRadius: '3px', position: 'relative' }}>
       <img
         src={imageUrl}
         alt="Logo"

@@ -4,6 +4,14 @@ import FullProfile from '../../pages/FullProfile';
 import Dashboard from '../../pages/Dashboard';
 import StepsContainer from '../../pages/StepsContainer';
 import ChwsPromoter from '../../pages/ChwsPromoter';
+import ChwsPromoPhilosophy from '../../pages/ChwsPromoPhilosophy';
+import ChwPCareerPathway from '../../pages/ChwPCareerPathway';
+import PersProfessDevelop from '../../pages/persProfessDevelop';
+import IntroductionCHWs from '../../pages/IntroductionChws';
+import CommunityHealthWorker from '../../pages/CommunityHealthWorker';
+import ResultsPopularEducation from '../../pages/ResultsPopularEducation';
+import CommunityHealthEducation from '../../pages/CommunityHealthEducation';
+
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -42,7 +50,7 @@ const Container = (props) => {
           type="button"
           onClick={() => handleButtonClick('chws')}
         >
-          chws
+          CHW’s Promotores
         </button>
         <button
           className={`navbar-button ${activeButton === 'form' ? 'active' : ''}`}
@@ -50,6 +58,55 @@ const Container = (props) => {
           onClick={() => handleButtonClick('form')}
         >
           Form
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'chwsPromoPhilosophy' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('chwsPromoPhilosophy')}
+        >
+          CHW/Promotor Philosophy
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'persProfessDevelop' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('persProfessDevelop')}
+        >
+              Personal and Professional Development       
+      </button>
+        <button
+          className={`navbar-button ${activeButton === 'chwPCareerPathway' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('chwPCareerPathway')}
+        >
+          CHW/P Career Pathway Opportunities        
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'introductionCHWs' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('introductionCHWs')}
+        >
+          Introduction to CHWs/Ps
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'communityHealthWorker' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('communityHealthWorker')}
+        >
+          What is a Community Health Worker?
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'resultsPopularEducation' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('resultsPopularEducation')}
+        >
+          Search results: Results: Popular Education
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'communityHealthEducation' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('communityHealthEducation')}
+        >
+          Community Health Education
         </button>
       </div>
 
@@ -67,7 +124,27 @@ const Container = (props) => {
           {activeButton === 'form' && (
             <StepsContainer usersData={usersData} wwwroot={props.wwwroot}></StepsContainer>
           )}
-          {activeButton === 'menu' && <div>Hola Menu</div>}
+          {activeButton === 'chwsPromoPhilosophy' && (
+            <ChwsPromoPhilosophy usersData={usersData} wwwroot={props.wwwroot}></ChwsPromoPhilosophy>
+          )}
+          {activeButton === 'persProfessDevelop' && (
+            <PersProfessDevelop usersData={usersData} wwwroot={props.wwwroot}></PersProfessDevelop>
+          )}
+          {activeButton === 'chwPCareerPathway' && (
+            <ChwPCareerPathway usersData={usersData} wwwroot={props.wwwroot}></ChwPCareerPathway>
+          )}
+          {activeButton === 'introductionCHWs' && (
+            <IntroductionCHWs usersData={usersData} wwwroot={props.wwwroot}></IntroductionCHWs>
+          )}
+          {activeButton === 'communityHealthWorker' && (
+            <CommunityHealthWorker usersData={usersData} wwwroot={props.wwwroot}></CommunityHealthWorker>
+          )}
+          {activeButton === 'resultsPopularEducation' && (
+            <ResultsPopularEducation usersData={usersData} wwwroot={props.wwwroot}></ResultsPopularEducation>
+          )}
+          {activeButton === 'communityHealthEducation' && (
+            <CommunityHealthEducation usersData={usersData} wwwroot={props.wwwroot}></CommunityHealthEducation>
+          )}
         </div>
       </div>
     </div>
