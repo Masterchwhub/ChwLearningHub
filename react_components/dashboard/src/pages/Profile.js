@@ -36,8 +36,8 @@ const Profile = (props) => {
         <div>
         <div p style={{ paddingBottom: '30px' }} >
           <p style={{ fontSize: '15px', color: '#646464' }}>Areas of interest <br></br>
-Community Engagement / Outreach <br></br>
-Community Education</p>
+          Community Engagement / Outreach <br></br>
+          Community Education</p>
         </div>
         </div>
         <img src="https://www.chwlearninghub.org/pix/ico/dash/ico_location.svg" width="29" height="29"></img>

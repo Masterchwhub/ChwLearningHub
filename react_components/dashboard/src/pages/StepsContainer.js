@@ -1,7 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import Button from '../components/shared/buttons/Button';
-import StepButton from '../components/shared/steps/StepButton';
-import StepProgress from '../components/shared/steps/StepProgress';
 import StepsForm from '../components/forms/StepsForm';
 
 
@@ -25,15 +23,14 @@ const BackDashboard = () => {
 return (
     <div className='container'>
         <div className="row" style={{borderRight: '4px solid #eee;'}}>
-            <div className="col-1"/>
             {
                 activateSteps ? (
                     <StepsForm />
                 ) : 
                 (
-                    <div className="card col-10" style={{ paddingBottom: '60px', backgroundColor: '#ddd' , color: 'white', borderRadius: '5px'}}>
+                    <div className="card col-12" style={{ paddingBottom: '60px', backgroundColor: '#ddd' , color: 'white', borderRadius: '5px'}}>
                         <div className="row mt-6">
-                            <div className="col-4">
+                            <div className="col-5">
                                 IMG
                                 <img src="react_components/dashboard/src/icons/event_icon.svg"/>
                             </div>
@@ -56,7 +53,6 @@ return (
                     </div>
                 )
             }
-            <div className="col-1"/>
         </div>
     </div>
   );

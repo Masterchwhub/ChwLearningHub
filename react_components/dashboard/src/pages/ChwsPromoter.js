@@ -17,7 +17,6 @@ const ChwsPromoter = () => {
       <div className='row'>
             <div className='col-1'></div>
             <div className='col-11'>
-  {/* prueba card  */}
   <p style={{ paddingTop: '40px', fontWeight: 'bold', fontSize: '12px'}}>Home - CHWs / Promotores</p>
   <div>
         <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/Promotor Philosophy</h1>
