@@ -45,8 +45,8 @@ const Question13 = ({dataFromChild13}) => {
 
 return (
     <div className="row"> 
-        <div className="col-3"/>
-        <div className="col-3"  style={{ color: '#143f6a'}}>
+        <div className="col-1"/>
+        <div className="col-5"  style={{ color: '#143f6a'}}>
             <h4>Which roles are you most interested in?</h4>
         </div>
         <div className="col-4">
@@ -62,7 +62,7 @@ return (
             </div>
             
             <div className="mb-6" >
-                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'next' : 'button' } text={'Continue'}/>
+                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'buttonStep3 continue3' : 'button continue3' } text={'Continue'}/>
             </div>
         </div>
     </div>

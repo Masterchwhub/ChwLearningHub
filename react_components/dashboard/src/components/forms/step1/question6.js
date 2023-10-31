@@ -67,7 +67,7 @@ return (
                 />
             </div>
             <div className="mt-2 mb-6" >
-                <StepButton onClick={() => nextStep(7)} className={activeButton && nextStepButton === 7 ? 'next' : 'button' } text={'Continue'}/>
+                <StepButton onClick={() => nextStep(7)} className={activeButton && nextStepButton === 7 ? 'next continue' : 'button continue' } text={'Continue'}/>
             </div>
         </div>
     </div>

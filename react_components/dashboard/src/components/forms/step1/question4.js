@@ -34,12 +34,12 @@ return (
         <div className="col-3"  style={{ color: '#47BBC6'}}>
             <h4>Country of residence </h4>
         </div>
-        <div className="col-3">
-            <div className="mb-6" >
+        <div className="col-4">
+            <div className="mb-4" >
                 <Select options={options1} value={selectedOption1} onChange={setSelectedOption1}/>
             </div>
             <div className="mb-6" >
-                <StepButton onClick={() => nextStep(5)} className={activeButton && nextStepButton === 5 ? 'next' : 'button' } text={'Continue'}/>
+                <StepButton onClick={() => nextStep(5)} className={activeButton && nextStepButton === 5 ? 'next continue' : 'button continue' } text={'Continue'}/>
             </div>
         </div>
     </div>
