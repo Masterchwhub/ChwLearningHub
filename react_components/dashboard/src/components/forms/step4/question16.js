@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 import StepButton from '../../shared/steps/StepButton';
-import CustomCheckbox from '../../shared/checkbox/CustomCheckbox';
-import './test.css'; 
+import './styles/step4.css'; 
 
 
 const Question16 = ({dataFromChild16}) => {
@@ -22,57 +21,29 @@ const Question16 = ({dataFromChild16}) => {
         dataFromChild16(goToStep17)
     };
 
+    const imageSource = 'react_components/dashboard/src/icons/steps/eye_icon_purple.svg';
+    const imageSource2 = 'react_components/dashboard/src/icons/steps/message_icon_purple.svg';
+    const imageSource3 = 'react_components/dashboard/src/icons/steps/phone_icon_purple.svg';
+    const imageSource4 = 'react_components/dashboard/src/icons/steps/mute_icon_purple.svg';
+
 return (
     <div className="row"> 
-        <div className="col-3"/>
-        <div className="col-3"  style={{ color: '#372bc4'}}>
+        <div className="col-2"/>
+        <div className="col-5"  style={{ color: '#372bc4', textAlign: 'right'}}>
             <h4>What are you most likely to do while waiting in line at the supermarket?</h4>
         </div>
         <div className="col-4">
-            <div>
-            <button className='button mb-4' type="button" >
-                <div className='row'>
-                    <div className='col-3'>
-                        <img src="react_components\dashboard\src\icons\book_icon.svg" alt="img" class="img-fluid"/>
-                    </div>
-                    <div className='col-9'>
-                    Look around at the other items
-                    </div>
-                </div>
-            </button>
-            <button className='button mb-4' type="button" >
-                <div className='row'>
-                    <div className='col-3'>
-                        <img src="react_components\dashboard\src\icons\book_icon.svg" alt="img" class="img-fluid"/>
-                    </div>
-                    <div className='col-9'>
-                    Talk to the person next to you in line
-                    </div>
-                </div>
-            </button>
-            <button className='button mb-4' type="button" >
-                <div className='row'>
-                    <div className='col-3'>
-                        <img src="react_components\dashboard\src\icons\book_icon.svg" alt="img" class="img-fluid"/>
-                    </div>
-                    <div className='col-9'>
-                    Fidget or use the phone
-                    </div>
-                </div>
-            </button>
-            <button className='button mb-4' type="button" >
-                <div className='row'>
-                    <div className='col-3'>
-                        <img src="react_components\dashboard\src\icons\book_icon.svg" alt="img" class="img-fluid"/>
-                    </div>
-                    <div className='col-9'>
-                    Wait silently
-                    </div>
-                </div>
-            </button>
+            <div className="mb-4" >
+                <StepButton onClick={() => nextStep(1)} className={activeButton && nextStepButton === 1 ? 'buttonStep4' : 'button4' } text={'Look around at the other items'} icon={imageSource}/>
             </div>
-            <div className="mb-6" >
-                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'next' : 'button' } text={'Continue'}/>
+            <div className="mb-4" >
+                <StepButton onClick={() => nextStep(2)} className={activeButton && nextStepButton === 2 ? 'buttonStep4' : 'button4' } text={'Talk to the person next to you in line'} icon={imageSource2}/>
+            </div>
+            <div className="mb-4" >
+                <StepButton onClick={() => nextStep(3)} className={activeButton && nextStepButton === 3 ? 'buttonStep4' : 'button4' } text={'Fidget or use the phone'} icon={imageSource3}/>
+            </div>
+            <div className="mb-4" >
+                <StepButton onClick={() => nextStep(4)} className={activeButton && nextStepButton === 4 ? 'buttonStep4' : 'button4' } text={'Wait silently'} icon={imageSource4}/>
             </div>
         </div>
     </div>

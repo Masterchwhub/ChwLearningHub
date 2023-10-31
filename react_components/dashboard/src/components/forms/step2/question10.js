@@ -40,11 +40,11 @@ const Question10 = ({dataFromChild10}) => {
 
 return (
     <div className="row"> 
-        <div className="col-3"/>
-        <div className="col-3"  style={{ color: '#067CBC'}}>
+        <div className="col-2"/>
+        <div className="col-4"  style={{ color: '#067CBC', textAlign:'right'}}>
             <h4>What would you use the CHW Learning Hub for?</h4>
         </div>
-        <div className="col-3">
+        <div className="col-5">
             <div className="mb-2" >
                 {checkboxes.map((checkbox) => (
                         <CustomCheckbox
@@ -57,7 +57,7 @@ return (
             </div>
             
             <div className="mb-6" >
-                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'next' : 'button' } text={'Continue'}/>
+                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'buttonStep2 continue2' : 'button continue2' } text={'Continue'}/>
             </div>
         </div>
     </div>

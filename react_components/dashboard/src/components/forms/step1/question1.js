@@ -26,7 +26,7 @@ return (
         <div className="col-3"  style={{ color: '#47BBC6'}}>
             <h4>Select your gender </h4>
         </div>
-        <div className="col-3">
+        <div className="col-4">
             <div>
                 <StepButton onClick={() => nextStep(1)} className={activeButton && nextStepButton === 1 ? 'next' : 'button' } text={'Male'}/>
             </div>
