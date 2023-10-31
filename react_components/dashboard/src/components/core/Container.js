@@ -11,7 +11,10 @@ import IntroductionCHWs from '../../pages/IntroductionChws';
 import CommunityHealthWorker from '../../pages/CommunityHealthWorker';
 import ResultsPopularEducation from '../../pages/ResultsPopularEducation';
 import CommunityHealthEducation from '../../pages/CommunityHealthEducation';
-
+import CoordinatorsAndSupervisors from '../../pages/CoordinatorsAndSupervisors'
+import AgenciesAndOrganizations from '../../pages/AgenciesAndOrganizations';
+import CommunityEngagement from '../../pages/CommunityEngagement';
+import ChwIntegrationHealthcare from '../../pages/CHWIntegrationHealthcare';
 
 const Container = (props) => {
   const moodleWsInstance = new MoodleWs(props.sesskey, props.wwwroot);
@@ -108,8 +111,35 @@ const Container = (props) => {
         >
           Community Health Education
         </button>
+        <button
+          className={`navbar-button ${activeButton === 'coordinatorsAndSupervisors' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('coordinatorsAndSupervisors')}
+        >
+          Coordinators And Supervisors
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'agenciesAndOrganizations' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('agenciesAndOrganizations')}
+        >
+          Agencies And Organizations
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'chwIntegrationHealthcare' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('chwIntegrationHealthcare')}
+        >
+          CHW Integration into Healthcare
+        </button>
+        <button
+          className={`navbar-button ${activeButton === 'communityEngagement' ? 'active' : ''}`}
+          type="button"
+          onClick={() => handleButtonClick('communityEngagement')}
+        >
+          Community Engagement-Advocacy
+        </button>
       </div>
-
       <div className="row">
         <div className="col-12">
           {activeButton === 'profile' && (
@@ -144,6 +174,19 @@ const Container = (props) => {
           )}
           {activeButton === 'communityHealthEducation' && (
             <CommunityHealthEducation usersData={usersData} wwwroot={props.wwwroot}></CommunityHealthEducation>
+          )}
+          {activeButton === 'coordinatorsAndSupervisors' && (
+            <CoordinatorsAndSupervisors usersData={usersData} wwwroot={props.wwwroot}></CoordinatorsAndSupervisors>
+          )}
+          {activeButton === 'agenciesAndOrganizations' && (
+            <AgenciesAndOrganizations usersData={usersData} wwwroot={props.wwwroot}></AgenciesAndOrganizations>
+          )}
+          {activeButton === 'chwIntegrationHealthcare' && (
+            <ChwIntegrationHealthcare usersData={usersData} wwwroot={props.wwwroot}></ChwIntegrationHealthcare>
+          )}
+          
+          {activeButton === 'communityEngagement' && (
+            <CommunityEngagement usersData={usersData} wwwroot={props.wwwroot}></CommunityEngagement>
           )}
         </div>
       </div>

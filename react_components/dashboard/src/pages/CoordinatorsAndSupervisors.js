@@ -7,8 +7,7 @@ import InterestCard from '../components/shared/cards/InterestCard'
 import TopicsCard from '../components/shared/cards/TopicsCard'
 import {} from '../styles/Header.css'
 
-const ChwsPromoter = () => {
-
+const CoordinatorsAndSupervisors = () => {
   return (
     <div>
       <div>
@@ -17,71 +16,50 @@ const ChwsPromoter = () => {
       <div className='row'>
             <div className='col-1'></div>
             <div className='col-11'>
-  <p style={{ paddingTop: '40px', fontWeight: 'bold', fontSize: '12px'}}>Home - CHWs / Promotores</p>
+  <p style={{ paddingTop: '40px', fontWeight: 'bold', fontSize: '12px'}}>Home - Coordinators and Supervisors</p>
   <div>
-        <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/Promotor Philosophy</h1>
-      </div>
-      <div className="row">
+        <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Recruitment & Interviewing </h1>
+</div>
+<div className="row">
   <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/schedule_icon.svg'} text='Schedule' />
+    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Hiring & Retention ' style={{ marginRight: '10px' }} />
   </div>
 </div>
 <div>
-  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Personal and Professional Development</h1>
+  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Supervision & Performance Appraisals</h1>
 </div>
 <div className="row">
   <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Supervision ' style={{ marginRight: '10px' }} />
   </div>
   <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/schedule_icon.svg'} text='Schedule' />
-  </div>
-</div>
-<div className="row">
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/schedule_icon.svg'} text='Schedule' />
-  </div>
-</div>
-<div className="row">
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/message_icon.svg'} text='Messages' style={{ marginRight: '10px' }} />
-  </div>
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/schedule_icon.svg'} text='Schedule' />
-  </div>
-</div>
-<div className="row">
-  <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/schedule_icon.svg'} text='Schedule' />
+    <InterestCard img={'react_components/dashboard/src/img/message_icon.svg'} text='Performance' style={{ marginRight: '10px' }} />
   </div>
 </div>
 <div>
-  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>CHW/P Career Pathway Opportunities</h1>
+  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Mentorship</h1>
 </div>
 <div className="row">
   <div className="col-sm-4">
-    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Digital Profile' style={{ marginRight: '10px' }} />
+    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Mentorship' style={{ marginRight: '10px' }} />
   </div>
 </div>
-  {/* final cards */}
+<div>
+  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Team Management</h1>
+</div>
+<div className="row">
+  <div className="col-sm-4">
+    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Team Building' style={{ marginRight: '10px' }} />
+  </div>
+</div>
+<div>
+  <h1 className='title-h1-chws' style={{ paddingTop: '40px', fontWeight: 'bold'}}>Planning & Evaluation </h1>
+</div>
+<div className="row">
+  <div className="col-sm-4">
+    <InterestCard img={'react_components/dashboard/src/img/resume.svg'} text='Strategic Action' style={{ marginRight: '10px' }} />
+  </div>
+</div>
                 <div className="title-h1-chws my-4" style={{paddingTop: "15px"}}>Featured</div>
                 <div className="row">
                     <TopicsCard img={'react_components/dashboard/src/img/card5.png'}  title="House of Popular Education" subtitle="Introduction to CHWs/Ps" text="Community Health Workers (CHWs) are recognized leaders and trusted members of the communities where…"/>
@@ -102,5 +80,4 @@ const ChwsPromoter = () => {
     
   );
 };
-
-export default ChwsPromoter;
+export default CoordinatorsAndSupervisors;
