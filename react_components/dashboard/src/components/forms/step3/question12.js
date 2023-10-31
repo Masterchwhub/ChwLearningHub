@@ -1,11 +1,13 @@
 import React, { useState} from 'react';
 import StepButton from '../../shared/steps/StepButton';
 import CustomCheckbox from '../../shared/checkbox/CustomCheckbox';
+import CustomInput from '../../shared/inputs/CustomInput';
 
 
 const Question12 = ({dataFromChild12}) => {
     const [activeButton, setActiveButton] = useState(false);
     const [nextStepButton, setNextStepButton] = useState(null);
+    const [inputValue, setInputValue] = useState('');
 
     const nextStep = (buttonId) => {
         setActiveButton(true);
@@ -43,10 +45,14 @@ const Question12 = ({dataFromChild12}) => {
         );
     };
 
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
 return (
     <div className="row"> 
-        <div className="col-3"/>
-        <div className="col-3"  style={{ color: '#143f6a'}}>
+        <div className="col-2"/>
+        <div className="col-5"  style={{ color: '#143f6a', textAlign:'right'}}>
             <h4>What qualities do you consider most important to you as a CHW?</h4>
         </div>
         <div className="col-4">
@@ -60,9 +66,15 @@ return (
                     />
                 ))}
             </div>
-            
+            <div className="mb-2" >
+                <CustomInput
+                    placeholder="Other"
+                    value={inputValue}
+                    onChange={handleInputChange}
+                />
+            </div>
             <div className="mb-6" >
-                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'next' : 'button' } text={'Continue'}/>
+                <StepButton onClick={() => nextStep(10)} className={activeButton && nextStepButton === 10 ? 'buttonStep3 continue3' : 'button continue3' } text={'Continue'}/>
             </div>
         </div>
     </div>

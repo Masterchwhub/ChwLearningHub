@@ -230,7 +230,8 @@ const StepsForm = () => {
         setActiveStep2(false)
         setInactiveStep2(false)
         setActiveStep3(false)
-        setActiveStep4(true)
+        setActiveStep4(false)
+        setCheckStep4(true)
         setInactiveStep4(false)
     }, 1000); 
   };
@@ -275,18 +276,28 @@ const StepsForm = () => {
     if (dataFromChild === 9){
         setCheckStep1(false)
         setActiveStep1(true)
+        setInactiveStep2(true)
+        setActiveStep2(false)
         return setDataFromChild(8)
     } 
     if (dataFromChild === 10){
         return setDataFromChild(9)
     } 
     if (dataFromChild === 11){
+        setCheckStep2(false)
+        setActiveStep2(true)
+        setInactiveStep3(true)
+        setActiveStep3(false)
         return setDataFromChild(10)
     } 
     if (dataFromChild === 12){
         return setDataFromChild(11)
     } 
     if (dataFromChild === 13){
+        setCheckStep3(false)
+        setActiveStep3(true)
+        setInactiveStep4(true)
+        setActiveStep4(false)
         return setDataFromChild(12)
     } 
     if (dataFromChild === 14){
@@ -305,6 +316,10 @@ const StepsForm = () => {
         return setDataFromChild(17)
     } 
     if (dataFromChild === 19){
+        setCheckStep3(false)
+        setActiveStep3(true)
+        setInactiveStep4(true)
+        setActiveStep4(false)
         return setDataFromChild(18)
     } 
   };

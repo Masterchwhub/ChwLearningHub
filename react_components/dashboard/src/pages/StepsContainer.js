@@ -30,9 +30,9 @@ return (
                 (
                     <div className="card col-12" style={{ paddingBottom: '60px', backgroundColor: '#ddd' , color: 'white', borderRadius: '5px'}}>
                         <div className="row mt-6">
-                            <div className="col-5">
-                                IMG
-                                <img src="react_components/dashboard/src/icons/event_icon.svg"/>
+                            <div className='col-1'/>
+                            <div className="col-5" >
+                                <img style={{width: '300px', height: '350'}} src="react_components/dashboard/src/img/wellcome-form.png"/>
                             </div>
                             <div className='col-6 mt-6'>
                                 <h4 className='card-title' style={{color: '#143F6A'}}>Hi Andrea</h4>
@@ -41,7 +41,7 @@ return (
                                 you can create a standout resume, track your progress, and access personalized opportunities.
                                 Let’s make your CHW Learning Hub experience remarkable. Complete your profile and embark on an enriching journey today!</p>
                             </div>
-                            <div className="col-5"/>
+                            <div className="col-6"/>
                             <div className="col-4 mt-6 ">
                                 <a style={{ fontSize: '13px' ,color: '#143F6A' }}>
                                     Skip to Dashboard // My CHW Space</a>

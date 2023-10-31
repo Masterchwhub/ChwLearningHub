@@ -62,7 +62,6 @@ return (
                                     (activeStepFromChild3  === false && checkStepFromChild3) &&
                                     <img src="react_components/dashboard/src/icons/check_step3_icon.svg"/>
                                 }
-                                
                                 <img className='ml-3' style={{position:'relative', width:'180px'}} src="react_components/dashboard/src/icons/step3_line_icon.svg"/>
                                 <div style={{ color: '#143F6A', position:'relative', }}>STEP 3</div>
                                 <div style={{ color: '#143F6A', position:'relative', bottom: '5px'}}>Goals and competencies</div>
@@ -75,6 +74,10 @@ return (
                                 { 
                                     activeStepFromChild4  &&
                                     <img src="react_components/dashboard/src/icons/active_step4_icon.svg"/>
+                                }
+                                { 
+                                    (activeStepFromChild3  === false && checkStepFromChild3) &&
+                                    <img src="react_components/dashboard/src/icons/check_step4_icon.svg"/>
                                 }
                                 <img className='ml-3' style={{position:'relative', width:'180px'}} src="react_components/dashboard/src/icons/step4_line_icon.svg"/>
                                 <div style={{ color: '#372BC4', position:'relative'}}>STEP 4</div>
