@@ -86,7 +86,6 @@ const AgenciesAndOrganizations = () => {
             </div>
         </div>
     </div>
-    
   );
 };
 export default AgenciesAndOrganizations;
